@@ -10,9 +10,12 @@ jobs:
   linux_test:
     name: Linux
     runs-on: ubuntu-latest
+
     services:
       nats:
         image: ripienaar/testing.go
+        ports:
+          - 4222:4222
 
     steps:
 
