@@ -14,8 +14,6 @@ jobs:
     services:
       nats:
         image: ripienaar/testing.go
-        ports:
-          - 4222:4222
 
     steps:
 
